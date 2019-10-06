@@ -1,0 +1,131 @@
+*{
+    scroll-behavior: smooth;
+}
+.abstract1{
+    position: absolute;
+    z-index: -9999;
+    width: 500px;
+    height: 500px;
+    background: rgba(31, 31, 31,0.8);
+    top: -25%;
+    right: 0%;
+    border-radius: 50%;
+}
+.abstract2{
+    position: absolute;
+    z-index: -999999;
+    width: 200px;
+    height: 200px;
+    background: #aaa;
+    top: 50%;
+    right: 0%;
+    border-radius: 50%;
+}
+.bg-light{
+    background: #D8DCDC !important;
+}
+nav{
+    box-shadow: 0px 0px 2px 2px #ddd;
+    width: 100% !important;
+    margin: 0;
+    position: fixed !important;
+    z-index: 9999;
+}
+.navbar-toggler{
+    background: #eee;
+}
+.navbar-nav{
+    font-size: 20px;
+}
+body,html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    overflow-x: hidden;
+}
+.content{
+    width: 100%;
+    height: 100vh;
+}
+.row{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.link{
+    background: #1f1f1f;
+    height: 100vh;
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.link-container{
+    margin-top: 30%;
+}
+.link-container .profile-img img{
+    width: 40%;
+}
+.link-container .link-div{
+    color: #1f1f1f;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+    padding: 5px;
+    background: #ccc;
+}
+.profile-content-container{
+    height: 100vh;
+}
+a{
+    text-decoration: none !important;
+}
+.right-content{
+    transition: all 1s ease;
+}
+.info{
+    margin-top: 20%;
+}
+.info-detail{
+    width: 80%;
+    height: 40vh;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.gear{
+    font-size: 48px;
+    margin: 20px;
+    animation: animate-gear 1s infinite ease;
+}
+@keyframes animate-gear{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(180deg)
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .link{
+        height: 50vh;
+        border-bottom-right-radius: 0%;
+    }
+    .link-container{
+        margin-top: 20%;
+    }
+    .link-content{
+        margin-top: 10%;
+    }
+    .abstract1,.abstract2{
+        display: none;
+    }
+}

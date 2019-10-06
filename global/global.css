@@ -1,0 +1,130 @@
+*{
+    scroll-behavior: smooth;
+}
+.abstract1{
+    position: absolute;
+    z-index: -9999;
+    width: 500px;
+    height: 500px;
+    background: rgba(31, 31, 31,0.8);
+    top: -25%;
+    right: 0%;
+    border-radius: 50%;
+}
+.abstract2{
+    position: absolute;
+    z-index: -999999;
+    width: 400px;
+    height: 400px;
+    background: #aaa;
+    top: 5%;
+    right: -5%;
+    border-radius: 50%;
+}
+.bg-light{
+    background: #D8DCDC !important;
+}
+nav{
+    box-shadow: 0px 0px 2px 2px #ddd;
+    width: 100% !important;
+    margin: 0;
+    position: fixed !important;
+    z-index: 9999;
+}
+.navbar-toggler{
+    background: #eee;
+}
+#profile{
+    width: 40px;
+    margin-left: 80px;
+}
+.navbar-nav{
+    font-size: 20px;
+}
+body,html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    overflow-x: hidden;
+}
+.content{
+    width: 100%;
+    height: 100vh;
+}
+.row{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.link{
+    background: #1f1f1f;
+    height: 100vh;
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+    border-bottom-right-radius: 100px;
+}
+.link-container{
+    margin-top: 50%;
+}
+.link-container .link-div{
+    color: #1f1f1f;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px;
+    padding: 5px;
+    background: #ccc;
+}
+.link-content{
+    margin-top: 20%;
+    margin-left: 5%;
+    font-size: 24px;
+}
+.link-content-container{
+    overflow-y: scroll;
+    height: 100vh;
+}
+a{
+    text-decoration: none !important;
+}
+.right-content{
+    transition: all 1s ease;
+}
+.btc{
+    display: none;
+    opacity: 0;
+}
+.d{
+    padding: 20px;
+}
+@media only screen and (max-width: 575px){
+    .link{
+        height: 50vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-bottom-right-radius: 0%;
+    }
+    .link-content-container{
+        height: 45vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border: 1px solid rgba(31, 31, 31,0.8);
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .link-container{
+        margin-top: 20%;
+    }
+    .link-content{
+        margin-top: 10%;
+    }
+    .abstract1,.abstract2{
+        display: none;
+    }
+    #profile{
+        width: 40px;
+        margin-left: 0px;
+    }
+}

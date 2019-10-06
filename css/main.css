@@ -1,0 +1,149 @@
+*{
+    scroll-behavior: smooth;
+}
+.bg-light{
+    background: #D8DCDC !important;
+}
+nav{
+    box-shadow: 0px 0px 2px 2px #ddd;
+    width: 100% !important;
+    margin: 0;
+    position: fixed !important;
+    z-index: 9999;
+}
+.navbar-toggler{
+    background: #eee;
+}
+#profile{
+    width: 40px;
+    margin-left: 80px;
+}
+.navbar-nav{
+    font-size: 20px;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+.landing{
+    width: 100%;
+    height: auto;
+    min-height: 80vh;
+    margin: 0 !important;
+}
+.landing-content{
+    width: 80%;
+    margin-top: 20%;
+    margin-right: auto;
+    margin-left: auto;
+}
+form{
+    margin-top: 20px;
+    border: 5px solid rgba(0,0,0,0.05) !important;
+    padding: 10px;
+    min-height: 50vh; 
+}
+.form-group{
+    width: 100% !important; 
+}
+p{
+    font-size: 16px;
+}
+@media only screen and (max-width: 800px){
+    p{
+        width: 100%;
+        font-size: 14px;
+    }
+}
+.abstract{
+    width: 50vw;
+    height: 50vw;
+    background: rgba(93, 194, 238, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -9999;
+    top: -20%;
+    left: -20%;
+}
+.down-arrow{
+    border: none;
+    outline: none;
+    background: transparent;
+    animation: animate-button 2s infinite ease;
+}
+@keyframes animate-button{
+    0%{
+        transform: translateY(-50%);
+    }
+    60%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-50%);
+    }
+}
+@media only screen and (max-width: 575px){
+    .down-arrow{
+        display: none;
+    }
+    #profile{
+        width: 40px;
+        margin-left: 0px;
+    }
+}
+.extended{
+    min-height: 80vh;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.extended .card{
+    align-self: center;
+    margin-top: 20vh;
+    width: 100%;
+    text-align: center !important;
+    border: none !important;
+}
+.card img{
+    width: auto;
+    height: auto;
+}
+footer{
+    height: auto;
+    background: #121212;
+    color: white;
+}
+footer .row{
+    height: 100% !important;
+    width: 100%;
+    margin: 0;
+}
+footer .text-left{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.contact-data{
+    margin-top: 10%;
+}
+.contact-data h5{
+    letter-spacing: .15em;
+}
+footer .text-right{
+    margin-top: 10%;
+    margin-right: 10%;
+}
+.social-data{
+    margin-top: 10%;
+}
+.social-data span{
+    padding: 2em;
+    padding-right: 0;
+    padding-bottom: 0;
+    font-size: 30px;
+}
+.social-data i{
+    cursor: pointer;
+}
